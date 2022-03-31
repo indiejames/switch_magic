@@ -51,7 +51,7 @@ def run_if(line, cell):
     '''Runs cell if line evaluates to True.'''
     if not eval(line):
         return
-    get_ipython().ex(cell)
+    get_ipython().run_cell(cell)
 
 
 def time_if(line, cell):
